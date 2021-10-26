@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Camera</title>
+  <!-- HTML -->
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- Project -->
+  <!--div class="box"><p></p></div-->
+  <!--canvas id="canvas"></canvas-->
+  <div class="camera">
+    <video height="100vh" width="100%" autoplay muted></video>
+    <nav>
+      <button type="submit" onclick="changeMode()">Mode 🔄</button>
+      <!--input class="range" type="range" id="range" value="50" /-->
+      <select name="filter" id="filter">
+        <option value="filters" selected>filters</option>
+        <option value="none">none</option>
+        <option value="blur(5px)">blur</option>
+        <option value="brightness(200%)">brightness</option>
+        <option value="contrast(200%)">contrast</option>
+        <option value="drop-shadow(8px 8px 10px gray)">drop shadow</option>
+        <option value="grayscale(100%)">grayscale</option>
+        <option value="hue-rotate(90deg)">hue rotate</option>
+        <option value="invert(100%)">invert</option>
+        <option value="opacity(30%)">opacity</option>
+        <option value="saturate(8)">saturate</option>
+        <option value="sepia(100%)">sepia</option>
+        <option value="contrast(200%) brightness(150%)">contrast + brightness</option>
+      </select>
+    </nav>
+  </div>
+  <!--input type="text" id="url" value="" placeholder="url" />
+  <button type="submit" onclick="getReUrl()">Get Redirect Url</button-->
+  <!--button type="submit" id="snap">Snap</button-->
+  <script src="main.js"></script>
+  <!--script src="new.py"></script-->
+</body>
+
+</html>
