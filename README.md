@@ -1,4 +1,4 @@
-# imritpro.github.io
+# riteshgharat.github.io
 
-* [code editor](https://imritpro.github.io/codeEditor)
-* [camera](https://imritpro.github.io/camera)
+* [code editor](https://riteshgharat.github.io/codeEditor)
+* [camera](https://riteshgharat.github.io/camera)
