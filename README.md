@@ -1,16 +1,24 @@
 # riteshgharat.github.io
 * Personal Website
 
-
 # Math-html
 
 ## Script: 
 ```html
-<script src="https://raw.githubusercontent.com/riteshgharat/riteshgharat.github.io/main/math-html/math.js"></script>
+<!--Math-html.js-->
+<script src="https://min.gitcdn.link/cdn/riteshgharat/riteshgharat.github.io/main/math-html/math.js"></script>
 ```
-
-## Demo:
+## Tag
 ```html
-<math>2+3*5/6 sin(PI/2) PI</math>
+   <math>2+2</math>
 ```
-* ✅️ Space must be included after completing operation. 
+## Demo:
+* ✅️ Space must be included after completing operation.
+* ✅️ Text should not be included in "math" tag.
+* ✅️ All most all javascript Math objects are supported.
+
+```html
+  <p>Operation Value: [2+3*5/6] = <math>2+3*5/6</math></p>
+  <p>Operation Value: [sin(PI/2)] = <math>sin(PI/2)</math></p>
+  <p>Operation Value: [PI] = <math>PI</math></p>
+```
