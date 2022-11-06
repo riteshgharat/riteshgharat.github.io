@@ -6,19 +6,49 @@
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Math.html</title>
+  <title>Math-html.js</title>
+
+  <!--Math-html.js-->
   <script defer src="https://min.gitcdn.link/cdn/riteshgharat/riteshgharat.github.io/main/math-html/math.js"></script>
 
+  <style type="text/css" media="all">
+    .dice-con {
+      width: 80%;
+      height: 250px;
+      margin-left: 10%;
+      border: 2px solid #000;
+      display: grid;
+      place-items: center;
+    }
+
+    .dice-con .dice {
+      width: 80px;
+      height: 80px;
+      background: royalblue;
+      display: grid;
+      place-items: center;
+      border-radius: 5px;
+      border: 2px solid #000;
+      font-size: 30px
+    }
+
+    .dice-con .btn {
+      width: 90px;
+      height: 40px;
+      border: 2px solid;
+      cursor: pointer;
+    }
+  </style>
 </head>
 
 <body>
-  <h1>Math.html</h1>
+  <h1>Math-html.js</h1>
   <h2>Perform Arithmetic Operation directly in HTML.</h2>
 
   <ul>
     <h2>Key Points:</h2>
     <li>Direct Arithmetic Operation in HTML Doc.</li>
-    <li>No need of external javascript.</li>
+    <li>No need of javascript for Math operation.</li>
     <li>Can perform basic as we as High level math</li>
   </ul>
 
@@ -26,6 +56,12 @@
   <h3>Operation Value: [2+3*5/6] = <math>2+3*5/6</math></h3>
   <h3>Operation Value: [sin(PI/2)] = <math>sin(PI/2)</math></h3>
   <h3>Operation Value: [PI] = <math>PI</math></h3>
+
+  <h2>Demo (Dice):</h2>
+  <div class="dice-con">
+    <math class="dice">floor(random()*(6))+1</math><br>
+    <button class="btn" onclick="location.reload()">Click</button>
+  </div>
 
   <a href="https://github.com/riteshgharat/riteshgharat.github.io">Doc</a>
 </body>
