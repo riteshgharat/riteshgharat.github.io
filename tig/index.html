@@ -14,11 +14,13 @@
 </head>
 
 <body>
+    <!--install btn-->
   <button type="submit" id="install-btn">Install</button>
-  <!--install btn-->
+    <!--invoice menu-->
   <div class="menu">
     <button class="btn print">Print Invoice</button>
-    <button class="btn edit">Edit</button><br>
+    <button class="btn edit">Edit</button>
+        <button class="btn close">Close</button><br>
   </div>
 
   <div class="invoice-con"></div>
@@ -64,8 +66,9 @@
         <input type="text" id="seller-name" list="seller-add" placeholder="Company Name (Seller)" required /><br>
         <datalist id="seller-add"></datalist>
         <textarea type="text" id="seller-address" placeholder="Address (Seller)" required></textarea><br>
-        <input type="text" id="seller-gstId" placeholder="Gst No (Seller)" required /></input><br>
-        <input type="text" id="seller-panNo" placeholder="Company PAN No.(Seller)" required /></input><br>
+        <input type="text" id="seller-city" placeholder="City/District (Seller)" required><br>
+        <input type="text" id="seller-gstId" placeholder="Gst No (Seller)" required /><br>
+        <input type="text" id="seller-panNo" placeholder="Company PAN No.(Seller)" required /><br>
         <input type="email" id="seller-email" placeholder="Email (Seller)" required /><br>
       </fieldset>
       <fieldset class="buyer">
@@ -82,9 +85,9 @@
         <input type="text" name="text" id="invoice-date" onfocus="(this.type='date')" placeholder="Invoice Date dd/mm/yyyy" required />
         <input type="text" id="purchase-no" placeholder="Purchase No (P.O)" required required /><br>
         <input type="text" name="date" id="purchase-date" placeholder="P.O Date dd/mm/yyyy" onfocus="(this.type='date')" required />
-        <input type="text" id="challan-no" placeholder="Challan No" required /></input>
+        <input type="text" id="challan-no" placeholder="Challan No" required />
         <br><input type="text" id="challan-date" placeholder="Challan Date dd/mm/yyyy" onfocus="(this.type='date')" required />
-        <input type="text" id="vehicle-no" placeholder="Vehicle No" /></input><br>
+        <input type="text" id="vehicle-no" placeholder="Vehicle No" /><br>
       </fieldset>
     </div>
     <fieldset class="addNewItem">
@@ -92,8 +95,8 @@
       <input type="text" id="item-name" list="item-add" placeholder="Item Name" required />
       <datalist id="item-add"></datalist>
       <div>
-        <input type="text" id="item-code" placeholder="Item Code/Description" required /></input>
-        <input type="text" id="hsn-code" placeholder="HSN Code" required /></input>
+        <input type="text" id="item-code" placeholder="Item Code/Description" required />
+        <input type="text" id="hsn-code" placeholder="HSN Code" required />
         <select id="gst-rate">
           <option value="0%">Gst 0%</option>
           <option value="5%">Gst 5%</option>

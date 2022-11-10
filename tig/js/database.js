@@ -1,5 +1,5 @@
-var sellerData = [[], [], ["Demo: Seller Name here...", "Seller Address here...", "Seller GSTIN No. here...", "Seller Email here...", "Sellers PAN No. here...", "Sellers Phone No. here..."]];
-var buyerData = [[], [], ["Demo: Buyer Name here...", "Buyer Address here...", "Buyer GSTIN No. here...", "Buyer Email here...", "Buyer Phone No. here..."]];
+var sellerData = [[], [], ["Demo: Seller Name here...", "Seller Address here...", "State Name...", "State Code...", "Seller City/District here...", "Seller GSTIN No. here...", "Seller Email here...", "Sellers PAN No. here...", "Sellers Phone No. here..."]];
+var buyerData = [[], [], ["Demo: Buyer Name here...", "Buyer Address here...", "State Name...", "State Code...", "Buyer GSTIN No. here...", "Buyer Email here...", "Buyer Phone No. here..."]];
 var itemData = [[], [], ["Item Name here...", "Item Code...", "Item HSN code...", "Item Rate here...", "Item Gst...", "",
   "Item Umo..."]];
 

@@ -260,23 +260,18 @@ button:active {
 }
 
 .print {
-  width: 80%;
+  width: 70%;
 }
 
-.edit {
+.edit,
+.close {
   width: 10%;
 }
-#install-btn{
+
+#install-btn {
   display: none;
 }
-#installInstructions {
-   display: none
-}
-@media (display-mode: browser) {
-   #installInstructions {
-     display: block
-   }
-}
+
 @media print {
 
   button,
@@ -284,3 +279,7 @@ button:active {
     display: none;
   }
 }
+/*
+@media screen and (max-width: 799px) {
+}
+*/

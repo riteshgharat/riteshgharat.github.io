@@ -67,7 +67,7 @@ function generateInvoice() {
           </td>
         </tr>
     </table><br/>
-    <center> SUBJECT TO PALGHAR JURISDICTION <br />This is a Computer Generated Invoice</center><br>
+    <center id="judicial"></center><br>
     <div class="html2pdf__page-break"></div>`;
 }
 
@@ -77,6 +77,12 @@ generate.addEventListener('click', () => {
     generateInvoice();
     updateUI();
     createIn();
+    //updating localStorage
+    localStorage.setItem('itemsDetails', JSON.stringify(itemsDetails));
+    localStorage.setItem('invoiceDetail', JSON.stringify(invoiceDetail));
+    localStorage.setItem('sellerDetail', JSON.stringify(sellerDetail));
+    localStorage.setItem('buyerDetail', JSON.stringify(buyerDetail));
+
     invoiceCon.style.display = 'block';
     entryCon.style.display = 'none';
 
@@ -96,6 +102,7 @@ document.querySelectorAll('input').forEach(input => {
 function createIn() {
   var sellerName = document.getElementById("seller-name") //seller Name
   var sellerAddress = document.getElementById("seller-address") //seller Address
+  var sellerCity = document.getElementById("seller-city") // seller city
   var sellerGstId = document.getElementById("seller-gstId") //seller gst id
   var sellerPanNo = document.getElementById("seller-panNo") //seller Company panNo
   var sellerEmail = document.getElementById("seller-email") //seller Email
@@ -126,11 +133,12 @@ function createIn() {
   sellerDetail = {
     name: sellerName.value,
     address: sellerAddress.value,
+    city: sellerCity.value,
     gstno: sellerGstId.value,
     email: sellerEmail.value,
     panno: sellerPanNo.value
   };
-
+  console.log(sellerDetail);
   buyerDetail = {
     name: buyerName.value,
     address: buyerAddress.value,
@@ -473,6 +481,8 @@ function updateUI() {
     inWords((2 * gstTotal).toFixed(2));
 
   footerClass.rows[1].cells[0].innerHTML = "Company's PAN : <b>" + seller.panno + '</b>';
+  // footer judicial statement
+  document.querySelector('#judicial').innerHTML = `SUBJECT TO ${seller.city.toUpperCase()} JURISDICTION </br>This is a Computer Generated Invoice`;
 }
 
 itemsDetails = [];
@@ -540,8 +550,8 @@ function AddItem() {
     localStorage.setItem('itemsDetails', JSON.stringify(itemsDetails));
     localStorage.setItem('invoiceDetail', JSON.stringify(invoiceDetail));
     localStorage.setItem('sellerDetail', JSON.stringify(sellerDetail));
-    sellerStoredData = JSON.parse(localStorage.getItem('sellerDetail'));
     localStorage.setItem('buyerDetail', JSON.stringify(buyerDetail));
+    sellerStoredData = JSON.parse(localStorage.getItem('sellerDetail'));
     buyerStoredData = JSON.parse(localStorage.getItem('buyerDetail'));
 
     // updating database of items

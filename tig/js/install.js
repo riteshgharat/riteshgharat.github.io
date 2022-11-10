@@ -2,7 +2,7 @@
 if ('serviceWorker' in navigator) {
   // Register the service worker
   navigator.serviceWorker.register('./sw.js').then(reg => {
-    console.log('👍 Successfully registered service worker');
+    //console.log('👍 Successfully registered service worker');
     reg.addEventListener('updatefound', () => {
       // An updated service worker has appeared in reg.installing!
       newWorker = reg.installing;

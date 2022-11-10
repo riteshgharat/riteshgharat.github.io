@@ -1,6 +1,7 @@
  var sellerName = document.getElementById("seller-name") //seller Name
  var sellerAddress = document.getElementById("seller-address") //seller Address
- var sellerGstId = document.getElementById("seller-gstId") //seller gst id
+ var sellerCity = document.getElementById("seller-city") //seller City
+ var sellerGstId = document.getElementById("seller-gstId") //seller GST Id
  var sellerPanNo = document.getElementById("seller-panNo") //seller Company panNo
  var sellerEmail = document.getElementById("seller-email") //seller Email
 
@@ -34,7 +35,7 @@
      document.querySelector('#buyer-add').innerHTML += `<option value="${buyerDatabase[j][0]}">`;
    }
    for (let k = 2; k < itemDatabase.length; k++) {
-     document.querySelector('#item-add').innerHTML += `<option value="${itemDatabase[k][0]} [${itemDatabase[k][2]}]">`;
+     document.querySelector('#item-add').innerHTML += `<option value="${itemDatabase[k][0]}">`;
    }
  }
 
@@ -44,15 +45,17 @@
      if ((sellerName.value).toLowerCase() == (sellerDatabase[i][0]).toLowerCase()) {
        sellerName.value = sellerDatabase[i][0];
        sellerAddress.value = `${sellerDatabase[i][1]}<br>State: ${sellerDatabase[i][2]}, Code: ${sellerDatabase[i][3]}`;
-       sellerGstId.value = sellerDatabase[i][4];
-       sellerEmail.value = sellerDatabase[i][5];
-       sellerPanNo.value = sellerDatabase[i][6];
+       sellerCity.value = sellerDatabase[i][4]
+       sellerGstId.value = sellerDatabase[i][5];
+       sellerEmail.value = sellerDatabase[i][6];
+       sellerPanNo.value = sellerDatabase[i][7];
      }
    }
  });
  sellerName.addEventListener('input', () => {
    if (sellerName.value == '') {
      sellerAddress.value = '';
+     sellerCity.value = '';
      sellerGstId.value = '';
      sellerEmail.value = '';
      sellerPanNo.value = '';
@@ -111,9 +114,10 @@
      seller = sellerStoredData;
      buyer = buyerStoredData;
 
-     console.log(sellerStoredData, buyerStoredData, ISD, itemsStoredData)
+     //console.log(sellerStoredData, buyerStoredData, ISD, itemsStoredData)
      sellerName.value = seller.name;
      sellerAddress.value = seller.address;
+     sellerCity.value = seller.city;
      sellerGstId.value = seller.gstno;
      sellerPanNo.value = seller.panno;
      sellerEmail.value = seller.email;

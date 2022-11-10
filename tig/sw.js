@@ -1,11 +1,11 @@
 //const cacheName = 'production-mode-vs-1.0.0';
-const cacheName = 'dev-mode-vs-1.0.1';
+const cacheName = 'dev-mode-vs-1.0.4';
 
 const files = [
     '/',
-    'index.html',
-    'manifest.json',
-    'css/style.css',
+    '/index.html',
+    '/manifest.json',
+    '/css/style.css',
     '/js/window.js',
     '/js/database.js',
     '/js/invoice.js',
