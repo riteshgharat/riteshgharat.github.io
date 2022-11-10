@@ -29,8 +29,8 @@
     "type": "image/png",
     "purpose": "any maskable"
     }],
-  "start_url": "/index.html",
-  "scope": "/",
+  "start_url": "/tig/index.html",
+  "scope": "/tig/",
   "lang": "en-US",
   "background_color": "#EBEBEB",
   "theme_color": "#519DFF",
