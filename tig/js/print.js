@@ -27,6 +27,7 @@ document.querySelector('.print').addEventListener('click', () => {
   };
 
   alert("Generating PDF...");
+  invoiceCon.style.zoom = '1';
   //New Promise-based usage:
   html2pdf().from(element).set(opt).save();
   // Old monolithic-style usage:

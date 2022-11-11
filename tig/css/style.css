@@ -279,7 +279,60 @@ button:active {
     display: none;
   }
 }
-/*
+
 @media screen and (max-width: 799px) {
+  nav h2 {
+    visibility: hidden;
+  }
+
+  nav h2:before {
+    visibility: visible;
+    content: "TIG";
+  }
+
+  .preInv,
+  .updateData {
+    width: 100px;
+    margin: 5px;
+  }
+
+  .entry-con div {
+    grid-template-columns: 1fr;
+    margin: 0;
+  }
+
+  .entry-con fieldset {
+    width: 90%;
+    margin: 0;
+    padding: 5%;
+  }
+
+  .entry-con fieldset input,
+  .entry-con select,
+  .entry-con textarea,
+  .entry-con fieldset .btn {
+    min-width: 95%;
+  }
+
+  .addNewItem #item-name {
+    width: 95%;
+  }
+
+  .additembtn {
+    max-width: 90%;
+  }
+
+  #inputDis {
+    transform: scale(0.95);
+  }
+
+  /*.invoice-con table,
+  .invoice-con th,
+  .invoice-con td {
+    transform: scale(0.8)
+  }*/
+  .invoice-con {
+    ;
+    zoom: 0.5;
+  }
 }
-*/

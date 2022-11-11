@@ -490,7 +490,7 @@ var Gtotal = 0;
 
 function AddItem() {
   createIn();
-  if (itemName == '' || hsnCode == '' || itemNo == '' || qty == '' || PUnit == '' || rateQty == '') {
+  if (itemName == '' || hsnCode == '' || itemNo == '' || qty == '' || PUnit == '' || itemRate == '') {
     alert('input error');
     let input = document.querySelectorAll("input");
     let textarea = document.querySelectorAll("textarea");
@@ -556,20 +556,23 @@ function AddItem() {
 
     // updating database of items
     let a = itemIndex;
-    if (a != itemDatabase.length) {
-      itemDatabase[a][0] = itemName;
-      itemDatabase[a][1] = itemNo;
-      itemDatabase[a][2] = hsnCode;
-      itemDatabase[a][3] = itemRate;
-      itemDatabase[a][4] = (gstPercentage).replace('%', '');
-      itemDatabase[a][5] = perUnit;
-    } else {
-      let itemsD = [itemName, itemNo, hsnCode, itemRate, gstPercentage.replace('%', ''), perUnit];
-      itemDatabase.push(itemsD);
+    if (itemName != '' && hsnCode != '' && itemNo != '' && itemRate != '') {
+      if (a != itemDatabase.length) {
+        itemDatabase[a][0] = itemName;
+        itemDatabase[a][1] = itemNo;
+        itemDatabase[a][2] = hsnCode;
+        itemDatabase[a][3] = itemRate;
+        itemDatabase[a][4] = (gstPercentage).replace('%', '');
+        itemDatabase[a][5] = perUnit;
+      } else {
+        let itemsD = [itemName, itemNo, hsnCode, itemRate, gstPercentage.replace('%', ''), perUnit];
+        itemDatabase.push(itemsD);
+        alert('added New Item');
+      }
+      console.log(itemDatabase)
+      //updating item database
+      window.localStorage.setItem("itemDatabase", JSON.stringify(itemDatabase));
     }
-    //updating item database
-    window.localStorage.setItem("itemDatabase", JSON.stringify(itemDatabase));
-
     //changing addItem div input value to null
     document.querySelectorAll('.addNewItem input').forEach(inp => inp.value = '');
   }
