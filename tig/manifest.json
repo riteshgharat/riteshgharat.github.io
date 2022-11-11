@@ -34,6 +34,6 @@
   "lang": "en-US",
   "background_color": "#EBEBEB",
   "theme_color": "#519DFF",
-  "orientation": "landscape-primary",
+  "orientation": "portrait-primary",
   "display": "standalone"
 }

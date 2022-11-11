@@ -85,7 +85,9 @@ itemDataUpd.addEventListener('click', () => {
 const popUpCon = document.querySelector('.popUp');
 document.querySelector('.closePopUp').addEventListener('click', () => {
   popUpCon.style.display = 'none';
+  document.querySelector('.entry-con').style.position = 'relative';
 });
 document.querySelector('.updateData').addEventListener('click', () => {
   popUpCon.style.display = 'block';
+  document.querySelector('.entry-con').style.position = 'fixed';
 });

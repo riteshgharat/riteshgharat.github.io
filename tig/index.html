@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -20,9 +19,25 @@
   <div class="menu">
     <button class="btn print">Print Invoice</button>
     <button class="btn edit">Edit</button>
-    <button class="btn close">Close</button><br>
+    <button class="btn close" onclick="let c = confirm('Are you sure want to close window?'); if(c){location.reload();};">Close</button><br>
   </div>
-
+  <div class="printPopUp">
+    <div class="printPopUp-con">
+      <div class="div1">
+        <div class="lds-facebook">
+          <div></div>
+          <div></div>
+          <div></div>
+        </div><br>
+        <h2>Generating PDF...</h2>
+      </div>
+      <div class="div2">
+        <img src="./images/circle-check-solid.svg" alt="tick"><br>
+        <h2>PDF Downloaded Successfully!</h2><br>
+        <button type="submit" class="btn" onclick="document.querySelector('.printPopUp').style.display = 'none';">Ok</button>
+      </div>
+    </div>
+  </div>
   <div class="invoice-con"></div>
 
   <nav>

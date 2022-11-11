@@ -25,10 +25,13 @@ nav h2 {
   font-weight: 700;
 }
 
-.popUp {
+.popUp,
+.printPopUp {
   width: 100%;
   height: 100vh;
   position: fixed;
+  top: 0;
+  left: 0;
   z-index: 5;
   background-color: #49494B82;
   display: none;
@@ -44,7 +47,8 @@ nav h2 {
   left: calc(95% - 20px);
 }
 
-.popUp .popCon {
+.popUp .popCon,
+.printPopUp .printPopUp-con div {
   width: 95%;
   height: 90vh;
   margin: 5vh 2.5%;
@@ -68,12 +72,80 @@ nav h2 {
   border-right: 2px dashed #000;
 }
 
+
+.printPopUp .printPopUp-con div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.printPopUp .printPopUp-con .div1 {}
+
+.printPopUp .printPopUp-con .div2 {
+  display: none;
+}
+
+.printPopUp .printPopUp-con .div2 img {
+  width: 100px;
+  color: greenyellow;
+}
+
+.printPopUp .printPopUp-con .div2 .btn {
+  width: 150px;
+  height: 50px;
+  font-size: 18px;
+}
+
+/*loading css*/
+.printPopUp .printPopUp-con .div1 .lds-facebook {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+
+.printPopUp .printPopUp-con .div1 .lds-facebook div {
+  display: inline-block;
+  position: absolute;
+  left: 8px;
+  width: 16px;
+  background: #519DFF;
+  animation: lds-facebook 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+}
+
+.printPopUp .printPopUp-con .div1 .lds-facebook div:nth-child(1) {
+  left: 8px;
+  animation-delay: -0.24s;
+}
+
+.printPopUp .printPopUp-con .div1 .lds-facebook div:nth-child(2) {
+  left: 32px;
+  animation-delay: -0.12s;
+}
+
+.printPopUp .printPopUp-con .div1 .lds-facebook div:nth-child(3) {
+  left: 56px;
+  animation-delay: 0;
+}
+
+@keyframes lds-facebook {
+  0% {
+    top: 8px;
+    height: 64px;
+  }
+
+  50%,
+  100% {
+    top: 24px;
+    height: 32px;
+  }
+}
+
 .invoice-con {
   width: 100%;
-  /*margin-left: 2.5%;*/
   min-height: 100vh;
   display: none;
-  /*scale: -2;*/
   background-color: #fff;
 }
 
@@ -290,9 +362,38 @@ button:active {
     content: "TIG";
   }
 
+  .popUp {
+    position: relative;
+    /* max-height: 891px;*/
+  }
+
+  .popCon .closePopUp {
+    top: 15px;
+    left: calc(95% - 40px);
+  }
+
+  .popUp .popCon {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    flex-direction: column;
+  }
+
+  .popUp .popCon .card {
+    width: 90%;
+    height: auto;
+    padding: 40px 0;
+  }
+
+  .popUp .popCon .sellerData,
+  .popUp .popCon .buyerData {
+    border-right: 0px;
+    border-bottom: 2px dashed #000;
+  }
+
   .preInv,
   .updateData {
-    width: 100px;
+    width: 120px;
     margin: 5px;
   }
 
@@ -323,16 +424,22 @@ button:active {
   }
 
   #inputDis {
-    transform: scale(0.95);
+    zoom: 0.6;
   }
 
-  /*.invoice-con table,
-  .invoice-con th,
-  .invoice-con td {
-    transform: scale(0.8)
-  }*/
   .invoice-con {
-    ;
     zoom: 0.5;
+  }
+}
+
+@media screen and (max-width: 500px) {
+
+  .print {
+    width: 50%;
+  }
+
+  .edit,
+  .close {
+    width: 15%;
   }
 }

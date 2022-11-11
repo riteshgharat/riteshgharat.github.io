@@ -1,3 +1,7 @@
+const printPopUp = document.querySelector('.printPopUp');
+const printPopUpDiv1 = document.querySelector('.printPopUp .printPopUp-con .div1');
+const printPopUpDiv2 = document.querySelector('.printPopUp .printPopUp-con .div2');
+
 // generating date formate for file
 function getDt() {
   var date = new Date();
@@ -26,10 +30,17 @@ document.querySelector('.print').addEventListener('click', () => {
     jsPDF: { unit: 'in', format: 'A3', orientation: 'portrait' }
   };
 
-  alert("Generating PDF...");
+  printPopUp.style.display = 'block';
   invoiceCon.style.zoom = '1';
   //New Promise-based usage:
-  html2pdf().from(element).set(opt).save();
+  html2pdf().from(element).set(opt).save().then(
+    (onFulfilled) => {
+      console.log('PDF downloading...');
+      printPopUpDiv1.style.display = 'none';
+      printPopUpDiv2.style.display = 'flex';
+    }
+  ).catch(onrejected => console.log('PDF download failed!')).error(msg => alert(`Something went wrong!\n${msg}`));
+
   // Old monolithic-style usage:
   //html2pdf(element, opt);
 })

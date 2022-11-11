@@ -138,7 +138,6 @@ function createIn() {
     email: sellerEmail.value,
     panno: sellerPanNo.value
   };
-  console.log(sellerDetail);
   buyerDetail = {
     name: buyerName.value,
     address: buyerAddress.value,

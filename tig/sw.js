@@ -22,6 +22,7 @@ const files = [
     '/images/icon-192x192.png',
     '/images/icon-284x284.png',
     '/images/icon-512x512.png',
+    '/images/circle-check-solid.svg'
 ];
 
 //Adding `install` event listener
