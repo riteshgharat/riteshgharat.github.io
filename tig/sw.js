@@ -1,5 +1,5 @@
 //const cacheName = 'production-mode-vs-1.0.0';
-const cacheName = 'beta-mode-vs-1.0.8';
+const cacheName = 'beta-mode-vs-1.0.9';
 
 const files = [
     '/',
