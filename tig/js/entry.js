@@ -27,15 +27,15 @@
  var perUnits = document.getElementById("per-unit"); // per unit
 
  //display companyies and buyers
- window.onload = function() {
+ window.onload = function () {
    for (let i = 2; i < sellerDatabase.length; i++) {
-     document.querySelector('#seller-add').innerHTML += `<option value="${sellerDatabase[i][0]}">`;
+     document.querySelector('#seller-add').innerHTML += `<option value='${sellerDatabase[i][0]}'>`;
    }
    for (let j = 2; j < buyerDatabase.length; j++) {
-     document.querySelector('#buyer-add').innerHTML += `<option value="${buyerDatabase[j][0]}">`;
+     document.querySelector('#buyer-add').innerHTML += `<option value='${buyerDatabase[j][0]}'>`;
    }
    for (let k = 2; k < itemDatabase.length; k++) {
-     document.querySelector('#item-add').innerHTML += `<option value="${itemDatabase[k][0]}">`;
+     document.querySelector('#item-add').innerHTML += `<option value='${itemDatabase[k][0]}'>`;
    }
  }
 
