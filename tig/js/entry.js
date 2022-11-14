@@ -87,9 +87,9 @@
        itemNos.value = itemDatabase[i][1];
        hsnCodes.value = itemDatabase[i][2];
        itemRates.value = itemDatabase[i][3];
-       qtys.value = '';
        gstPercentages.selectedIndex = gstIndex(itemDatabase[i][4]);
-       perUnits.selectedIndex = perIndex(itemDatabase[i][5]);
+       qtys.value = '';
+       perUnits.value = itemDatabase[i][5];
        //itemIndex
        itemIndex = i;
      }
@@ -102,7 +102,7 @@
      itemRates.value = '';
      qtys.value = '';
      gstPercentages.selectedIndex = 0;
-     perUnits.selectedIndex = 0;
+     perUnits.value = '';
      //itemIndex
      itemIndex = itemDatabase.length;
    }
@@ -144,7 +144,7 @@
        gstPercentages.selectedIndex = gstIndex(ITSD.gst);
        qtys.value = ITSD.qty;
        itemRates.value = ITSD.itemRate;
-       perUnits.selectedIndex = perIndex(ITSD.PUnit);
+       perUnits.value = ITSD.perUnit;
        AddItem();
      }
    }

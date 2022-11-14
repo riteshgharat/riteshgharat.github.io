@@ -121,13 +121,21 @@
         </select>
         <input type="number" id="item-rate" placeholder="Rate (per unit)" required />
         <input type="number" id="item-qty" placeholder="Quantity" required />
-        <select id="per-unit">
+        <!--select id="per-unit">
           <option value="EA" selected>EACH</option>
           <option value=PAC>PACK</option>
           <option value="LTR">LTR</option>
           <option value="KG">KG</option>
           <option value="MTR">MTR</option>
-        </select>
+        </select-->
+        <input id="per-unit" list="perUnit" placeholder="UOM">
+        <datalist id="perUnit">
+          <option value="EA" selected>
+          <option value=PAC>
+          <option value="LTR">
+          <option value="KG">
+          <option value="MTR">
+        </datalist>
       </div>
     </fieldset>
 

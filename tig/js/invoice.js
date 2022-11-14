@@ -34,7 +34,7 @@ function generateInvoice() {
           <th style="width:8%; border-bottom: 1px solid #ccc;">GST</th>
           <th style="width: 8%; border-bottom: 1px solid #ccc;">Quantity</th>
           <th style="width: 7%; border-bottom: 1px solid #ccc;">Rate</th>
-          <th style="width:5%; border-bottom: 1px solid #ccc;">Per</th>
+          <th style="width:5%; border-bottom: 1px solid #ccc;">UOM</th>
           <th style="width: 12%; border-bottom: 1px solid #ccc;">Amount</th>
         </tr>
     </table>
@@ -189,7 +189,7 @@ function createIn() {
       break;
   }
 
-  PUnit = 0;
+  /*PUnit = 0;
 
   switch (perUnit) {
     case "EA":
@@ -207,7 +207,7 @@ function createIn() {
     case "MTR":
       PUnit = "MTR";
       break;
-  }
+  }*/
 }
 
 function updateUI() {
@@ -489,7 +489,7 @@ var Gtotal = 0;
 
 function AddItem() {
   createIn();
-  if (itemName == '' || hsnCode == '' || itemNo == '' || qty == '' || PUnit == '' || itemRate == '') {
+  if (itemName == '' || hsnCode == '' || itemNo == '' || qty == '' || perUnit == '' || itemRate == '') {
     alert('input error');
     let input = document.querySelectorAll("input");
     let textarea = document.querySelectorAll("textarea");
@@ -513,10 +513,10 @@ function AddItem() {
     <td>${itemName}</td> 
     <td align="center">${hsnCode}</td> 
     <td align="center">${percent}</td> 
-    <td align="center">${qty}${PUnit}</td> 
+    <td align="center">${qty}${perUnit}</td> 
     <td align="center">${itemRate + '/-'}</td> 
-    <td align="center">${PUnit}</td> 
-    <td align="center">₹${rateQty}</td>
+    <td align="center">${perUnit}</td> 
+    <td align="center">₹${rateQty.toFixed(2)}</td>
     </tr>`
 
     items = {
@@ -526,7 +526,7 @@ function AddItem() {
       gst: (percentage * 100).toFixed(0),
       qty: qty,
       itemRate: itemRate,
-      perUnit: PUnit,
+      perUnit: perUnit,
       rateQty: rateQty
     }
     itemsDetails.push(items);
@@ -542,7 +542,7 @@ function AddItem() {
         <td></td> 
         <td></td> 
         <td></td> 
-        <th>₹${Gtotal}</th>
+        <th>₹${Gtotal.toFixed(2)}</th>
         </tr>
     `;
 
