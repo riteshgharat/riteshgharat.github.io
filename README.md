@@ -1,6 +1,9 @@
 # [riteshgharat.github.io](https://riteshgharat.github.io/)
 * Personal Website
 
+# [Tax Invoice Generator](https://riteshgharat.github.io/tig/)
+* Generate GST Invoice for free
+
 # [Math-html.js](https://riteshgharat.github.io/math-html/)
 ### Perform Arithmetic Operation directly in HTML.
 ## Key Points:
@@ -15,7 +18,16 @@
 ```
 ## Tag:
 ```html
+<!--with math tag-->
 <math>2+2</math>
+
+<!--without math tag-->
+
+<!--using Class-->
+<p class="math">2+2</p>
+<!--using ID-->
+<p id="math">2+2</p>
+
 ```
 ## Demo:
 * ✅️ Space must be included after completing operation.
@@ -75,3 +87,6 @@
   </body>
   </html>
 ```
+
+# [CS Project](https://riteshgharat.github.io/csproject)
+* CS project using HTML
