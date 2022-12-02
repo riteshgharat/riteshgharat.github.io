@@ -27,7 +27,7 @@
  var perUnits = document.getElementById("per-unit"); // per unit
 
  //display companyies and buyers
- window.onload = function () {
+ window.onload = function() {
    for (let i = 2; i < sellerDatabase.length; i++) {
      document.querySelector('#seller-add').innerHTML += `<option value='${sellerDatabase[i][0]}'>`;
    }
@@ -35,10 +35,14 @@
      document.querySelector('#buyer-add').innerHTML += `<option value='${buyerDatabase[j][0]}'>`;
    }
    for (let k = 2; k < itemDatabase.length; k++) {
-     document.querySelector('#item-add').innerHTML += `<option value='${itemDatabase[k][0]}'>`;
+     if (itemDatabase[k][0] != null && !(itemDatabase[k][0]).toLowerCase().includes('#comment')) {
+       document.querySelector('#item-add').innerHTML += `<option value='${itemDatabase[k][0]}'>`;
+     }
+     else {
+       console.log('Comments Skipped');
+     }
    }
  }
-
  //auto filling data form database
  sellerName.addEventListener('change', () => {
    for (let i = 2; i < sellerDatabase.length; i++) {
@@ -82,7 +86,7 @@
  var itemIndex = itemDatabase.length;
  itemNames.addEventListener('change', () => {
    for (let i = 2; i < itemDatabase.length; i++) {
-     if ((itemNames.value).toLowerCase() == (itemDatabase[i][0]).toLowerCase()) {
+     if ((itemNames.value).toLowerCase() == (itemDatabase[i][0]).toLowerCase() && (itemNames.value).toLowerCase() !== "#comment") {
        itemNames.value = itemDatabase[i][0];
        itemNos.value = itemDatabase[i][1];
        hsnCodes.value = itemDatabase[i][2];

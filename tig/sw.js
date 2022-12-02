@@ -1,11 +1,18 @@
 //const cacheName = 'production-mode-vs-1.0.0';
-const cacheName = 'beta-mode-vs-1.0.9';
+const cacheName = 'beta-mode-vs-1.0.11';
 
 const files = [
     '/',
     '/index.html',
     '/manifest.json',
+    '/offline/offline.html',
     '/css/style.css',
+    '/images/icon-128x128.png',
+    '/images/icon-1144x144.png',
+    '/images/icon-192x192.png',
+    '/images/icon-284x284.png',
+    '/images/icon-512x512.png',
+    '/tig/images/offline.png',
     '/js/window.js',
     '/js/database.js',
     '/js/invoice.js',
@@ -17,12 +24,7 @@ const files = [
     '/library/html2canvas/html2canvas.min.js',
     '/library/html2pdf/html2pdf.bundle.js',
     '/library/excel2json/read-excel-file.min.js',
-    '/images/icon-128x128.png',
-    '/images/icon-1144x144.png',
-    '/images/icon-192x192.png',
-    '/images/icon-284x284.png',
-    '/images/icon-512x512.png',
-    '/images/circle-check-solid.svg'
+    '/images/circle-check-solid.svg',
 ];
 
 //Adding `install` event listener
