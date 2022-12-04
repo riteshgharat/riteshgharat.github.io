@@ -1,4 +1,10 @@
-window.onload = location.hash = '#home';
+// on load function
+window.onload = function() {
+  document.querySelector('.preloading').classList.add('preloading-remove');
+  location.hash = '#home';
+}
+
+// chaning windows on hash change
 window.addEventListener('hashchange', () => {
   let hash = (location.hash).replace('#', '');
   document.querySelectorAll('.link').forEach(l => { l.classList.remove('active') });
@@ -7,6 +13,7 @@ window.addEventListener('hashchange', () => {
   document.querySelector(`.${hash}`).classList.add('active');
 })
 
+// for updating projects card
 const projectData = [
   {
     name: "Math Riddles",

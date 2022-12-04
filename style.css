@@ -13,6 +13,7 @@ body {
   font-family: sans-serif;
 }
 
+/*logo*/
 .logo {
   width: 50px;
   height: 50px;
@@ -24,6 +25,33 @@ body {
   z-index: 10;
 }
 
+/*perloading*/
+.preloading {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  z-index: 11;
+  position: fixed;
+  background: #1a1a1a;
+  transition: .5s;
+  opacity: 1;
+}
+
+.preloading img {
+  width: 200px;
+  height: 200px;
+  position: relative;
+}
+
+.preloading-remove {
+  opacity: 0;
+  z-index: 0;
+}
+
+/*navbar*/
 .navbar {
   width: 100%;
   height: 50px;
