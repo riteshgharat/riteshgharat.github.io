@@ -107,7 +107,7 @@ body {
 }
 
 .hero-img {
-  width: 400px;
+  object-fit: cover;
   opacity: 0.2;
   border-radius: 10px;
   transition: .5s;
