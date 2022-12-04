@@ -13,6 +13,17 @@ body {
   font-family: sans-serif;
 }
 
+.logo {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url(/assets/giphy.webp);
+  background-size: cover;
+  z-index: 10;
+}
+
 .navbar {
   width: 100%;
   height: 50px;
@@ -95,7 +106,8 @@ body {
   width: 150px;
   height: 50px;
   padding: 8px;
-  background: none;
+  /*background: url(/assets/giphy.webp);
+  background-size: cover;*/
   border: 2px solid #fff;
   color: #fff;
   text-decoration: none;
@@ -528,7 +540,7 @@ body {
 
   .home-section div {
     width: 100%;
-    height: 60vh;
+    height: 40vh;
     padding: 0 30px;
   }
 
@@ -540,7 +552,7 @@ body {
     width: 300px;
     height: 300px;
     object-fit: cover;
-    margin: 20px 0;
+    margin: 50px 0;
   }
 
   /*project section*/
@@ -566,6 +578,10 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+  }
+
+  .about-content .hero-img {
+    margin: 20px 0;
   }
 
   .about-info-con {

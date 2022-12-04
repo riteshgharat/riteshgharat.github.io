@@ -19,7 +19,7 @@ const projectData = [
     name: "Tax Invoice Generator",
     description: "Generator GST Invoice for free.",
     img: "/assets/tig.png",
-    repo: "https://github.com/riteshgharat/riteshgharat.github.io/tig/",
+    repo: "https://github.com/riteshgharat/riteshgharat.github.io/tree/main/tig",
     live: "https://riteshgharat.github.io/tig/"
   },
   {
@@ -33,7 +33,7 @@ const projectData = [
     name: "Math-html.js",
     description: "Do Arithmetic Operation directly into HTML.",
     img: "/assets/mathhtmljs.png",
-    repo: "https://github.com/riteshgharat/riteshgharat.github.io/math-html/",
+    repo: "https://github.com/riteshgharat/riteshgharat.github.io",
     live: "https://riteshgharat.github.io/math-html/"
   },
 ];
@@ -48,8 +48,8 @@ for (let i = 0; i < projectData.length; i++) {
     <h1 class="project-title">${projectData[i].name}</h1>
     <p class="project-info">${projectData[i].description}</p>
     <div class="project-btn-grp">
-      <a href="${projectData[i].repo}" class="project-btn github" type="submit">repo</a>
-      <a href="${projectData[i].live}" class="project-btn seelive" type="submit">see live</a>
+      <a href="${projectData[i].repo}" class="project-btn github" type="submit" target="_blank">repo</a>
+      <a href="${projectData[i].live}" class="project-btn seelive" type="submit" target="_blank">see live</a>
     </div>
   </div>
 </div>
