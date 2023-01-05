@@ -27,7 +27,14 @@ const projectData = [
     description: "Generator GST Invoice for free.",
     img: "/assets/tig.png",
     repo: "https://github.com/riteshgharat/riteshgharat.github.io/tree/main/tig",
-    live: "https://riteshgharat.github.io/tig/"
+    live: "https://riteshgharat.github.io/projects/tig/"
+  },
+  {
+    name: "SDSM Map",
+    description: "Map of SDSM College Palghar",
+    img: "/assets/sdsmmap.png",
+    repo: "https://github.com/riteshgharat/sdsm-college-map",
+    live: "https://sdsmcollegemap.netlify.app"
   },
   {
     name: "What's AI?",
@@ -41,8 +48,8 @@ const projectData = [
     description: "Do Arithmetic Operation directly into HTML.",
     img: "/assets/mathhtmljs.png",
     repo: "https://github.com/riteshgharat/riteshgharat.github.io",
-    live: "https://riteshgharat.github.io/math-html/"
-  },
+    live: "https://riteshgharat.github.io/projects/math-html/"
+  }
 ];
 
 const projectCon = document.querySelector('.project-container');
