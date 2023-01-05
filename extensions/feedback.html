@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <title>Feedback</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="post">
+      <div class="text">Thanks for rating us ❤️</div>
+    </div>
+    <div class="star-widget">
+      <input type="radio" name="rate" id="rate-5">
+      <label for="rate-5" class="fas fa-star"></label>
+      <input type="radio" name="rate" id="rate-4">
+      <label for="rate-4" class="fas fa-star"></label>
+      <input type="radio" name="rate" id="rate-3">
+      <label for="rate-3" class="fas fa-star"></label>
+      <input type="radio" name="rate" id="rate-2">
+      <label for="rate-2" class="fas fa-star"></label>
+      <input type="radio" name="rate" id="rate-1">
+      <label for="rate-1" class="fas fa-star"></label><br>
+      <header></header>
+    </div>
+    <form action="#">
+      <input type="text" class="name" maxlength="20" placeholder="Name" required><br>
+      <input type="number" class="number" maxlength="10" placeholder="Mobile No." required><br>
+      <!--input type="email" class="email" maxlength="20" placeholder="Email" required><br-->
+      <textarea cols="30" rows="10" maxlength="100" class="remark" placeholder="Describe your experience..." required></textarea><br>
+      <button type="submit" class="post-btn">Post 🚀</button>
+    </form>
+  </div>
+  <script type="module" src="script.js"></script>
+</body>
+
+</html>
