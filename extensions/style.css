@@ -152,3 +152,9 @@ form button {
 form button:hover {
   background: #1b1b1b;
 }
+
+@media screen and (max-width: 500px) {
+  .container {
+    zoom: 0.7;
+  }
+}
