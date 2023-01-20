@@ -36,21 +36,41 @@ const name = document.querySelector('.name');
 const number = document.querySelector('.number');
 const email = document.querySelector('.email');
 const remark = document.querySelector('.remark');
-
+/*getting site*/
+let id;
+window.onload = () => {
+  let params = new URLSearchParams(location.search);
+  id = params.get('id');
+  if (id != null) {
+    window.localStorage.setItem('id', id);
+    location.search = "";
+  }
+}
+/*posting feedbacks*/
 document.querySelector(".post-btn").addEventListener('click', () => {
-  if (name.value && number.value && remark.value) {
-    set(ref(db, "data/sdsm-map/" + number.value), {
+  let em = (email.value).search('@');
+  if (name.value && number.value && remark.value && email.value && (em != -1)) {
+    let site = localStorage.getItem('id');
+    set(ref(db, `data/${site}/${number.value}`), {
       name: name.value,
       number: number.value,
-      email: "",
+      email: email.value,
       rate: Rate,
-      remark: remark.value
+      remark: remark.value,
+      date: getDate()
     }).then(() => {
       form.style.display = 'none';
       starWidget.style.display = 'none';
       post.style.display = 'block';
+      window.localStorage.setItem('id', '');
     }).catch((error) => {
       alert(error)
     });
   }
 });
+
+/*get date*/
+function getDate() {
+  let date = new Date;
+  return `${date.toLocaleDateString()}, ${date.toTimeString()}`;
+}
