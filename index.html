@@ -1,38 +1,31 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
   <meta name="description" content="Personal Portfolio Website">
   <meta name="keywords" content="HTML, CSS, JavaScript, Portfolio, Website, Ritesh Gharat, GitHub">
   <meta name="author" content="Ritesh Gharat">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Ritesh Gharat</title>
-  <!--BMC-->
-  <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="riteshgharat" data-description="Support me on Buy me a coffee!" data-message="Thanks for visiting. You can now buy me a coffee." data-color="#FFDD00" data-position="Right" data-x_margin="18" data-y_margin="60"></script>
-  <!--style sheet-->
   <link rel="stylesheet" href="style.css">
-  <link rel="shortcut icon" type="image/x-icon" href="assets/favicon.ico"> <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z0NYXCCL7D"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-    gtag('config', 'G-Z0NYXCCL7D');
-  </script>
-  <!--manifest json-->
+  <!--favickn & manifest json-->
+  <link rel="shortcut icon" type="image/x-icon" href="assets/favicon.ico">
   <link rel="manifest" href="manifest.json">
+
+  <meta name="apple-mobile-web-app-capable" content="yes">
 </head>
 
 <body>
   <!--perloader-->
   <div class="preloading">
-    <img class="logo" src="assets/logo.png" alt="logo">
+    <img class="logo" src="assets/icons/logo.png" alt="logo">
   </div>
 
   <!--logo-->
-  <a href="#home"><img class="logo" src="assets/logo.png" alt="logo"></a>
+  <a href="#home"><img class="logo" src="assets/icons/logo.png" alt="logo"></a>
 
   <!--navbar-->
   <nav class="navbar">
@@ -47,9 +40,9 @@
   <!--home section-->
   <section class="home-section active">
     <div class="div1">
-      <h1 class="hero-heading">Hello, i'm <br> Ritesh Gharat</h1>
-      <h3 class="hero-subtitle">Student | Web Dev</h3><br>
-      <a href="#project" class="explore">Explore 🚀</a>
+      <h1 class="hero-heading">Hello 👋,i'm<br>Ritesh Gharat</h1>
+      <h2 class="hero-subtitle">Student | Web Dev</h2><br>
+      <a href="#project" id="explore">Explore 🚀</a>
     </div>
     <img src="assets/hero.png" class="hero-img" alt="hero-img">
   </section>
@@ -58,7 +51,7 @@
   <section class="project-section">
     <h1 class=" project-heading">Some of my projects</h1>
     <div class="project-container">
-      <!--project card will render here-->
+      <!--project cards will render here-->
     </div>
   </section>
 
@@ -66,78 +59,44 @@
   <section class="about-section">
     <div class="about-content">
       <img class="hero-img" src="assets/hero.png" alt="hero img">
-      <div class="about-info-con">
-        <h1 class="about-heading">About Me</h1>
-        <p class="about-info">Hi there, Myself Ritesh Gharat. I'm a student how likes to code and make cool things.</p>
-      </div>
-    </div>
-
-    <!--skills section-->
-    <div class="skills-section">
-      <h1 class="heading">Skills</h1>
-      <div class="skills-container">
-        <div class="skill-card">
-          <img src="assets/html.png" class="skill-img" alt="html">
-          <div class="skill-level">99%</div>
-          <h1 class="skill-name">HTML</h1>
+      <div>
+        <div class="about-info-con">
+          <h1 class="about-heading">About Me</h1>
+          <p class="about-info">Hey there! I'm a so call web developer and student who loves bringing creative ideas to life through code. When I'm not studying, you can find me tinkering with new web technologies or exploring the great outdoors. I'm always on the lookout for new projects to work on, so let's connect and build something awesome together!</p>
         </div>
-        <div class="skill-card">
-          <img src="assets/css.png" class="skill-img" alt="css">
-          <div class="skill-level">95%</div>
-          <h1 class="skill-name">CSS</h1>
-        </div>
-        <div class="skill-card">
-          <img src="assets/js.png" class="skill-img" alt="js">
-          <div class="skill-level">80%</div>
-          <h1 class="skill-name">JS</h1>
-        </div>
-        <div class="skill-card">
-          <img src="assets/nodejs.png" class="skill-img" alt="nodejs">
-          <div class="skill-level">20%</div>
-          <h1 class="skill-name">Nodejs</h1>
-        </div>
-        <!--div class="skill-card">
+        <!--skills section-->
+        <div class="skills-section">
+          <h1 class="heading">Skills</h1>
+          <div class="skills-container">
+            <div class="skill-card">
+              <img src="assets/html.png" class="skill-img" alt="html">
+              <div class="skill-level">99%</div>
+              <h1 class="skill-name">HTML</h1>
+            </div>
+            <div class="skill-card">
+              <img src="assets/css.png" class="skill-img" alt="css">
+              <div class="skill-level">95%</div>
+              <h1 class="skill-name">CSS</h1>
+            </div>
+            <div class="skill-card">
+              <img src="assets/js.png" class="skill-img" alt="js">
+              <div class="skill-level">80%</div>
+              <h1 class="skill-name">JS</h1>
+            </div>
+            <div class="skill-card">
+              <img src="assets/nodejs.png" class="skill-img" alt="nodejs">
+              <div class="skill-level">20%</div>
+              <h1 class="skill-name">Nodejs</h1>
+            </div>
+            <!--div class="skill-card">
           <img src="assets/reactjs.png" class="skill-img" alt="reactjs">
           <div class="skill-level">10%</div>
           <h1 class="skill-name">React Js</h1>
         </div-->
+          </div>
+        </div>
       </div>
     </div>
-
-    <!--timeline-->
-    <!--div class="timeline">
-      <h1 class="heading">Education and Experience</h1>
-      <div class="card">
-        <div class="card-body">
-          <h1 class="card-title">2005-2010</h1>
-          <p class="card-detail">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem eius molestias asperiores nisi, voluptatibus ipsum obcaecati similique autem fugit, molestiae? Facere distinctio ratione dolore culpa quis adipisci, quod iusto cupiditate perspiciatis itaque eos consequatur odio. Consequuntur, natus. Natus, eaque, a.</p>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-body">
-          <h1 class="card-title">2005-2010</h1>
-          <p class="card-detail">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem eius molestias asperiores nisi, voluptatibus ipsum obcaecati similique autem fugit, molestiae? Facere distinctio ratione dolore culpa quis adipisci, quod iusto cupiditate perspiciatis itaque eos consequatur odio. Consequuntur, natus. Natus, eaque, a.</p>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-body">
-          <h1 class="card-title">2005-2010</h1>
-          <p class="card-detail">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem eius molestias asperiores nisi, voluptatibus ipsum obcaecati similique autem fugit, molestiae? Facere distinctio ratione dolore culpa quis adipisci, quod iusto cupiditate perspiciatis itaque eos consequatur odio. Consequuntur, natus. Natus, eaque, a.</p>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-body">
-          <h1 class="card-title">2005-2010</h1>
-          <p class="card-detail">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem eius molestias asperiores nisi, voluptatibus ipsum obcaecati similique autem fugit, molestiae? Facere distinctio ratione dolore culpa quis adipisci, quod iusto cupiditate perspiciatis itaque eos consequatur odio. Consequuntur, natus. Natus, eaque, a.</p>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-body">
-          <h1 class="card-title">2005-2010</h1>
-          <p class="card-detail">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem eius molestias asperiores nisi, voluptatibus ipsum obcaecati similique autem fugit, molestiae? Facere distinctio ratione dolore culpa quis adipisci, quod iusto cupiditate perspiciatis itaque eos consequatur odio. Consequuntur, natus. Natus, eaque, a.</p>
-        </div>
-      </div>
-    </div-->
   </section>
 
   <!--contact container-->
@@ -151,9 +110,17 @@
     </div>
   </section>
   <script src="app.js"></script>
-  
-   <!--script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="riteshgharat" data-color="#FFDD00" data-emoji=""  data-font="Cookie" data-text="Buy me a coffee" data-outline-color="#000000" data-font-color="#000000" data-coffee-color="#ffffff" ></script>
-    <a href="https://www.buymeacoffee.com/riteshgharat" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a-->
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z0NYXCCL7D"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-Z0NYXCCL7D');
+  </script>
+  <!--BMC-->
+  <!--script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="riteshgharat" data-description="Support me on Buy me a coffee!" data-message="Thanks for visiting. You can now buy me a coffee." data-color="#FFDD00" data-position="Right" data-x_margin="18" data-y_margin="60"></script-->
 </body>
 
 </html>
