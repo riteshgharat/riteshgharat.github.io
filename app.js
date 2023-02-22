@@ -18,35 +18,35 @@ const projectData = [
   {
     name: "Math Riddles",
     description: "Challenge yourself with math puzzles.",
-    img: "/assets/mathriddles.png",
+    img: "/assets/mathriddles.webp",
     repo: "https://github.com/riteshgharat/math-riddles/",
     live: "https://mathriddles.netlify.app/"
   },
   {
     name: "Tax Invoice Generator",
     description: "Generator GST Invoice for free.",
-    img: "/assets/tig.png",
+    img: "/assets/tig.webp",
     repo: "https://github.com/riteshgharat/riteshgharat.github.io/tree/main/tig",
     live: "https://riteshgharat.github.io/projects/tig/"
   },
   {
     name: "SDSM Map",
     description: "Map of SDSM College Palghar",
-    img: "/assets/sdsmmap.png",
+    img: "/assets/sdsmmap.webp",
     repo: "https://github.com/riteshgharat/sdsm-college-map",
     live: "https://sdsmcollegemap.netlify.app"
   },
   {
     name: "What's AI?",
     description: "Expand your brain by learning What is AI.",
-    img: "/assets/whatsai.png",
+    img: "/assets/whatsai.webp",
     repo: "https://github.com/riteshgharat/",
     live: "https://whatisai.netlify.app/"
   },
   {
     name: "Math-html.js",
     description: "Do Arithmetic Operation directly into HTML.",
-    img: "/assets/mathhtmljs.png",
+    img: "/assets/mathhtmljs.webp",
     repo: "https://github.com/riteshgharat/riteshgharat.github.io",
     live: "https://riteshgharat.github.io/projects/math-html/"
   }
@@ -55,7 +55,7 @@ const projectData = [
 const projectCon = document.querySelector('.project-container');
 for (let i = 0; i < projectData.length; i++) {
   projectCon.innerHTML += `
-<div class="project-card" style="background: url('/assets/project-${i+1}.png'), no-repeat;background-size: cover;
+<div class="project-card" style="background: url('/assets/project-${i+1}.webp'), no-repeat;background-size: cover;
 ">
   <img src="${projectData[i].img}" class="project-img" alt="project-card">
   <div class="project-content">

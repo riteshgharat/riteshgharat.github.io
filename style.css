@@ -673,6 +673,7 @@ body {
 
   .skill-img {
     height: 150px;
+    width: 150px;
     width: auto;
   }
 
@@ -754,7 +755,8 @@ body {
   }
 
   .skill-img {
-    height: 120px
+    height: 120px;
+    width: 120px
   }
 
   .skill-level {
