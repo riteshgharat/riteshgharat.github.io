@@ -104,7 +104,8 @@ body {
 .home-section.active,
 .project-section.active,
 .about-section.active,
-.contact-section.active {
+.contact-section.active,
+.error-section.active {
   position: relative;
   opacity: 1;
   z-index: 8;
@@ -581,6 +582,55 @@ body {
   opacity: 1;
 }
 
+/*Eroor Section*/
+.error-section {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: fixed;
+  transform: 1s;
+  opacity: 0;
+
+  color: #fff;
+}
+
+.error-heading {
+  font-size: 50px;
+  color: #fff;
+  opacity: 0.8;
+  text-transform: capitalize;
+
+  border-bottom: 5px solid;
+  border-image-source: linear-gradient(45deg, #fd004c, #fe9000, #fff020, #3edf4b, #3363ff, #b102b7, #fd004c);
+  border-image-slice: 1;
+  border-image-repeat: round;
+  border-radius: 10px;
+  animation: spin 1.5s infinite linear;
+}
+
+.message {
+  text-align: center;
+  padding: 20px 50px;
+
+  font-size: 20px;
+  color: #fff;
+  opacity: 0.5;
+}
+
+.redirect {
+  width: 100px;
+  height: 35px;
+  background: #fff;
+  color: #000;
+  border-radius: 5px;
+  display: grid;
+  place-items: center;
+  text-decoration: none;
+}
+
 @media screen and (max-width: 800px) {
 
   /*home section*/
@@ -661,7 +711,6 @@ body {
 
   .heading {
     font-size: 35px;
-    text-align: center;
   }
 
   .skills-container {
@@ -739,6 +788,10 @@ body {
     object-fit: cover;
   }
 
+  .skill-level {
+    right: 10%;
+  }
+
   #explore {
     font-size: 18px;
     padding: 8px 30px;
@@ -764,5 +817,7 @@ body {
     height: 60px;
     border: 5px solid;
     font-size: 18px;
+
+    right: 5%;
   }
 }
