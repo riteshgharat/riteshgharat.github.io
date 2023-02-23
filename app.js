@@ -43,7 +43,7 @@ const projectData = [
     live: "https://sdsmcollegemap.netlify.app"
   },
   {
-    name: "devresources",
+    name: "dev resources",
     description: "Learn, Earn & Develop",
     img: "/assets/devresources.webp",
     repo: "#",
@@ -57,7 +57,7 @@ const projectData = [
     live: "https://whatisai.netlify.app/"
   },
   {
-    name: "Math-html.js",
+    name: "Math-html Js",
     description: "Do Arithmetic Operation directly into HTML.",
     img: "/assets/mathhtmljs.webp",
     repo: "https://github.com/riteshgharat/riteshgharat.github.io",
