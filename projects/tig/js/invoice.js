@@ -222,6 +222,9 @@ function updateUI() {
 
   itemsStoredData = JSON.parse(localStorage.getItem('itemsDetails'));
 
+  //updating title of webpage
+  document.title = `Inv${ISD.invoiceNo}`;
+
   document.querySelector('.sDetails').innerHTML = "<h3>" + seller.name + '</h3>' + seller.address + '<br> GST No: <b>' + seller.gstno + '</b><br>Email: ' + seller.email;
   document.querySelector('.pDetails').innerHTML = "<em>Buyer's Detail</em><h3>" + buyer.name + '</h3>' + buyer.address + '<br> GST No: <b>' + buyer.gstno + '</b><br> Email: ' + buyer.email;
 
@@ -231,7 +234,7 @@ function updateUI() {
   document.querySelector('.poNo').innerHTML = 'P.O No: <br><h4> ' + ISD.purchaseNo + '</h4>';
   document.querySelector('.chalNo').innerHTML = 'Challan No: <br><h4>' + ISD.challanNo + '</h4>'
   document.querySelector('.chalDate').innerHTML = 'Date: <br><h4> ' + ISD.challanDate + '</h4>';
-  document.querySelector('.vehNo').innerHTML = 'Vehile No: <br><h4>' + ISD.vehicleNo.toUpperCase() + '</h4>'
+  document.querySelector('.vehNo').innerHTML = 'Vehicle No: <br><h4>' + ISD.vehicleNo.toUpperCase() + '</h4>'
 
   let mainCl = document.querySelector('.main-cal');
   let gstClass = document.querySelector('.gst-class');

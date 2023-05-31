@@ -1,5 +1,5 @@
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=Edge">
@@ -17,9 +17,11 @@
   <button type="submit" id="install-btn">Install</button>
   <!--invoice menu-->
   <div class="menu">
+    <button class="btn download">Download Invoice</button>
     <button class="btn print">Print Invoice</button>
+    <button class="btn newInv" onclick="let c = confirm('Are you sure want to create new invoice?'); if(c){window.open(location.href,'_blank')};">New Inv</button>
     <button class="btn edit">Edit</button>
-    <button class="btn close" onclick="let c = confirm('Are you sure want to close window?'); if(c){location.reload();};">Close</button><br>
+    <button class="btn close" onclick="let c = confirm('Are you sure want to close window?'); if(c){location.reload()};">Close</button><br>
   </div>
   <div class="printPopUp">
     <div class="printPopUp-con">

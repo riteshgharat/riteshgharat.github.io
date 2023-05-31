@@ -19,6 +19,7 @@ import { getDatabase, ref, child, set, get, onValue, push, onChildAdded, onChild
 const firebaseConfig = {
   apiKey: "AIzaSyAm3HWlcWyC5wqpv9nCN01pY3eKbPxQErE",
   authDomain: "feedback-form-1e35a.firebaseapp.com",
+  databaseURL: "https://feedback-form-1e35a-default-rtdb.firebaseio.com",
   projectId: "feedback-form-1e35a",
   storageBucket: "feedback-form-1e35a.appspot.com",
   messagingSenderId: "799597376722",

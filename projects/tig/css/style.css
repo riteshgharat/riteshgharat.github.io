@@ -256,7 +256,7 @@ textarea,
   width: 80%;
   height: 35px;
   margin: 5px;
-  padding: 0px 5px 0px 5px;
+  padding: 5px;
   border: 1px solid #ccc;
   border-radius: 5px;
   position: relative;
@@ -338,6 +338,9 @@ button:active {
 .edit,
 .close {
   width: 10%;
+}
+.close{
+  background: #FF3232
 }
 
 #install-btn {
@@ -433,7 +436,6 @@ button:active {
 }
 
 @media screen and (max-width: 500px) {
-
   .print {
     width: 50%;
   }

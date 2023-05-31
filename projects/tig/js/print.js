@@ -17,7 +17,7 @@ function getDt() {
 }
 
 //Printing Setting
-document.querySelector('.print').addEventListener('click', () => {
+document.querySelector('.download').addEventListener('click', () => {
   var element = document.querySelector('.invoice-con');
 
   ISD = JSON.parse(localStorage.getItem('invoiceDetail'));
@@ -50,4 +50,9 @@ document.querySelector(".edit").addEventListener("click", () => {
   document.querySelectorAll("td").forEach(td => td.contentEditable = true);
   document.querySelectorAll("th").forEach(th => th.contentEditable = true);
   alert("Invoice is now Editable...");
+});
+
+// to print invoice directly
+document.querySelector('.print').addEventListener('click', () => {
+  window.print();
 });

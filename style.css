@@ -2,6 +2,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    user-select: none;
+    -ms-user-select: none;
+    -moz-user-select: none;
   }
 
   :root {
@@ -632,9 +635,9 @@
     background: #fff;
     color: #000;
     border-radius: 5px;
+    text-decoration: none;
     display: grid;
     place-items: center;
-    text-decoration: none;
   }
 
   @media screen and (max-width: 800px) {
