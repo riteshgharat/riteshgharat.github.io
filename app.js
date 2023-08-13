@@ -1,6 +1,9 @@
 // on load function
-window.onload = function() {
+setTimeout(function() {
   document.querySelector('.preloading').classList.add('preloading-remove');
+}, 1500);
+
+window.onload = function (){
   location.hash = '#home';
 }
 
@@ -32,8 +35,8 @@ const projectData = [
     name: "Tax Invoice Generator",
     description: "Generator GST Invoice for free.",
     img: "/assets/tig.webp",
-    repo: "https://github.com/riteshgharat/riteshgharat.github.io/tree/main/tig",
-    live: "https://riteshgharat.github.io/projects/tig/"
+    repo: "https://github.com/riteshgharat/tig",
+    live: "https://riteshgharat.github.io/tig/"
   },
   {
     name: "SDSM Map",
@@ -43,25 +46,11 @@ const projectData = [
     live: "https://sdsmcollegemap.netlify.app"
   },
   {
-    name: "dev resources",
-    description: "Learn, Earn & Develop",
-    img: "/assets/devresources.webp",
-    repo: "#",
-    live: "https://devresources.tech"
-  },
-  {
     name: "What's AI?",
     description: "Expand your brain by learning What is AI.",
     img: "/assets/whatsai.webp",
-    repo: "https://github.com/riteshgharat/",
+    repo: "https://github.com/riteshgharat/hackathon/tree/main/What%20is%20AI",
     live: "https://whatisai.netlify.app/"
-  },
-  {
-    name: "Math-html Js",
-    description: "Do Arithmetic Operation directly into HTML.",
-    img: "/assets/mathhtmljs.webp",
-    repo: "https://github.com/riteshgharat/riteshgharat.github.io",
-    live: "https://riteshgharat.github.io/projects/math-html/"
   }
 ];
 
