@@ -1,132 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="Personal Portfolio Website" />
+    <meta
+      name="keywords"
+      content="HTML, CSS, JavaScript, Portfolio, Website, Ritesh Gharat, GitHub"
+    />
+    <meta name="author" content="Ritesh Gharat" />
+    <title>Ritesh Gharat</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <!--favickn & manifest json-->
+    <link
+      rel="shortcut icon"
+      type="image/x-icon"
+      href="assets/icons/favicon.ico"
+    />
+    <link rel="manifest" href="manifest.json" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+  </head>
+  <body>
+    <canvas class="matrix-bg" id="matrix"></canvas>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <div class="terminal">
+      <header>
+        <div class="terminal-prompt">whoami</div>
+        <h1>Ritesh Gharat</h1>
+        <p>Full Stack Developer | Open Source Contributor | Linux Enthusiast</p>
+      </header>
 
-  <meta name="description" content="Personal Portfolio Website">
-  <meta name="keywords" content="HTML, CSS, JavaScript, Portfolio, Website, Ritesh Gharat, GitHub">
-  <meta name="author" content="Ritesh Gharat">
-  <title>Ritesh Gharat</title>
-  <link rel="stylesheet" href="css/style.css">
-  <!--favickn & manifest json-->
-  <link rel="shortcut icon" type="image/x-icon" href="assets/icons/favicon.ico">
-  <link rel="manifest" href="manifest.json">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-</head>
+      <section class="section">
+        <div class="terminal-prompt">cat about.txt</div>
+        <p>
+          I build elegant solutions to complex problems using JavaScript and
+          Python. I am passionate about learning new technologies and
+          contributing to open source projects.
+        </p>
+      </section>
 
-<body>
-  <!--perloader-->
-  <div class="preloading">
-    <img class="logo" src="assets/icons/logo.webp" alt="logo">
-  </div>
-
-  <!--logo-->
-  <a href="#home"><img class="logo" src="assets/icons/logo.webp" alt="logo"></a>
-
-  <!--navbar-->
-  <nav class="navbar">
-    <ul class="link-group">
-      <li class="link home"><a href="#home"><span>Home</span><img src="assets/svgs/home.svg" title="Home" alt="home"></a></li>
-      <li class="link project"><a href="#project"><span>Project</span><img src="assets/svgs/project.svg" title="Projects" alt="project"></a></li>
-      <li class="link about"><a href="#about"><span>About</span><img src="assets/svgs/about.svg" title="About" alt="about"></a></li>
-      <li class="link contact"><a href="#contact"><span>Contact</span><img src="assets/svgs/contact.svg" title="Contact" alt="contact"></a></li>
-    </ul>
-  </nav>
-
-  <!--home section-->
-  <section class="home-section active">
-    <div class="div1">
-      <h1 class="hero-heading">Hello 👋,i'm<br>Ritesh Gharat</h1>
-      <h2 class="hero-subtitle">Student | Web Dev</h2><br>
-      <a href="#project" id="explore">Explore 🚀</a>
-    </div>
-    <img src="assets/hero.webp" class="hero-img" alt="hero-img">
-  </section>
-  <!--project section-->
-
-  <section class="project-section">
-    <h1 class=" project-heading">Some of my projects</h1>
-    <div class="project-container">
-      <!--project cards will render here-->
-    </div>
-  </section>
-
-  <!--about container-->
-  <section class="about-section">
-    <div class="about-content">
-      <img class="hero-img" src="assets/hero.webp" alt="hero img">
-      <div>
-        <div class="about-info-con">
-          <h1 class="about-heading">About Me</h1>
-          <p class="about-info">Hey there! I'm a so call web developer and student who loves bringing creative ideas to life through code. When I'm not studying, you can find me tinkering with new web technologies or exploring the great outdoors. I'm always on the lookout for new projects to work on, so let's connect and build something awesome together!</p>
-        </div>
-        <!--skills section-->
-        <div class="skills-section">
-          <h1 class="heading">Skills</h1>
-          <div class="skills-container">
-            <div class="skill-card">
-              <img src="assets/html.webp" class="skill-img" alt="html">
-              <div class="skill-level">99%</div>
-              <h1 class="skill-name">HTML</h1>
-            </div>
-            <div class="skill-card">
-              <img src="assets/css.webp" class="skill-img" alt="css">
-              <div class="skill-level">95%</div>
-              <h1 class="skill-name">CSS</h1>
-            </div>
-            <div class="skill-card">
-              <img src="assets/js.webp" class="skill-img" alt="js">
-              <div class="skill-level">80%</div>
-              <h1 class="skill-name">JS</h1>
-            </div>
-            <div class="skill-card">
-              <img src="assets/nodejs.webp" class="skill-img" alt="nodejs">
-              <div class="skill-level">20%</div>
-              <h1 class="skill-name">Nodejs</h1>
-            </div>
-            <!--div class="skill-card">
-          <img src="assets/reactjs.webp" class="skill-img" alt="reactjs">
-          <div class="skill-level">10%</div>
-          <h1 class="skill-name">React Js</h1>
-        </div-->
+      <section class="section">
+        <div class="terminal-prompt">ls projects/</div>
+        <div class="projects">
+          <div class="project">
+            <h3>
+              <a href="https://github.com/riteshgharat/synapse" target="_blank"
+                >Synapse AI</a
+              >
+            </h3>
+            <p>
+              Synapse AI is an innovative web application designed to transform
+              personalized tutoring by leveraging the power of artificial
+              intelligence.
+            </p>
+            <p>Tech: React, Node.js, Firebase, Google Gemini</p>
+          </div>
+          <div class="project">
+            <h3><a href="https://github.com/riteshgharat/tig">T.I.G</a></h3>
+            <p>Lightweight, web-based Tax Invoice Generator</p>
+            <p>Tech: HTML, CSS, Javascript</p>
           </div>
         </div>
-      </div>
+      </section>
+
+      <section class="section">
+        <div class="terminal-prompt">cat skills.txt</div>
+        <p>Languages: Python, JavaScript, C, C++, JAVA</p>
+        <p>Tools: Linux, Postman, Git</p>
+        <p>Frameworks: React, Node.js</p>
+      </section>
+
+      <section class="section">
+        <div class="terminal-prompt">ls contact/</div>
+        <p>
+          <a href="mailto:riteshgharat05@gmail.com" target="_blank">Email</a>
+          |
+          <a href="https://github.com/riteshgharat" target="_blank">GitHub</a>
+          |
+          <a
+            href="https://www.linkedin.com/in/ritesh-g-69a0bb238"
+            target="_blank"
+            >LinkedIn</a
+          >
+        </p>
+      </section>
     </div>
-  </section>
-
-  <!--contact container-->
-  <section class="contact-section">
-    <div class="contact-con">
-      <a href="https://github.com/riteshgharat" target="_blank"><img src="assets/svgs/github.svg" alt="github"></a>
-      <a href="https://twitter.com/riteshgharat05" target="_blank"><img src="assets/svgs/twitter.svg" alt="twitter"></a>
-      <a href="https://www.instagram.com/ritesh.g.12/" target="_blank"><img src="assets/svgs/instagram.svg" alt="instagram"></a>
-      <a href="https://www.linkedin.com/in/ritesh-g-69a0bb238" target="_blank"><img src="assets/svgs/linkedin.svg" alt="linkedin"></a>
-      <a href="mailto:riteshgharat05@gmail.com" target="_blank"><img src="assets/svgs/mail.svg" alt="mail"></a>
-    </div>
-  </section>
-
-  <section class="error-section">
-    <h1 class="error-heading">Error 404</h1>
-    <p class="message"></p>
-    <a href="#home" class="redirect">Home</a>
-  </section>
-
-  <script src="app.js"></script>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z0NYXCCL7D"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-    gtag('config', 'G-Z0NYXCCL7D');
-  </script>
-  <!--BMC-->
-  <!--script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="riteshgharat" data-description="Support me on Buy me a coffee!" data-message="Thanks for visiting. You can now buy me a coffee." data-color="#FFDD00" data-position="Right" data-x_margin="18" data-y_margin="60"></script-->
-</body>
-
+    <script src="app.js"></script>
+  </body>
 </html>
