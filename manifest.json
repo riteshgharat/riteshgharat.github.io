@@ -1,7 +1,7 @@
 {
   "name": "Ritesh Gharat",
-  "short_name": "Ritesh Gharat",
-  "version": "1.0.0",
+  "short_name": "rit",
+  "version": "2.0.0",
   "description": "Personal Website",
   "icons": [
     { "src": "assets/icons/android-chrome-192x192.png", "sizes": "192x192", "type": "image/png" },
@@ -9,8 +9,8 @@
   "start_url": "/index.html",
   "scope": "/",
   "lang": "en-US",
-  "background_color": "#191919",
-  "theme_color": "#ffffff",
+  "background_color": "#1a1a1a",
+  "theme_color": "#33ff33",
   "orientation": "portrait-primary",
   "display": "standalone"
 }
