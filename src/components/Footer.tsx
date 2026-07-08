@@ -17,7 +17,7 @@ function Footer() {
   return (
     <footer className="absolute bottom-0 w-full h-14 px-2 sm:px-10 flex items-center justify-end-safe">
       <span className="absolute left-0 text-[12px] font-mono ml-4 text-gray-500">
-        Credit:{" "}
+        Inspo:{" "}
         <a
           href="https://www.sunniekapar.com/"
           target="_blank"
