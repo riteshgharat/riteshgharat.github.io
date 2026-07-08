@@ -13,7 +13,7 @@ function App() {
         <div className="max-w-3xl h-auto p-10">
           <h1 className="text-3xl">रितेश घरत</h1>
           <span className="text-lg font-extralight italic">
-            rih-tesh ghu-rut
+            rih-tesh gha-rat
           </span>
           <p className="my-5 text-base text-justify">
             I'm software engineer based out of{" "}
